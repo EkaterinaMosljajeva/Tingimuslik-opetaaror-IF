@@ -116,3 +116,114 @@ from math import *
 #        print("Vale Andmetüüp")
 #except:
 #    print("Vale Andmetüüp")
+
+#8
+#try:
+#    p=input("Kas soovite piima osta? ")
+#    if p.isalpha():
+#        if p.lower()==("jah"):
+#            print("Piim maksab 2 euro")
+#            piim=int(input("Mitu tükki sa tahad? "))
+#            piim=piim*2
+#            print(f"See maksab {piim} euro")
+#        elif p.lower()==("ei"):
+#            print()
+#            piim=0
+#        else:
+#            print("Vastus saab olla ainult jah või ei")
+#    else:
+#        print("Vale Andmetüüp")
+#    s=input("Kas soovite saia osta? ")
+#    if s.isalpha():
+#        if s.lower()==("jah"):
+#            print("Saia maksab 1 euro")
+#            saia=int(input("Mitu tükki sa tahad? "))
+#            saia=saia*1
+#            print(f"See maksab {saia} euro")
+#        elif s.lower()==("ei"):
+#            print()
+#            saia=0
+#        else:
+#            print("Vastus saab olla ainult jah või ei")
+#    else:
+#        print("Vale Andmetüüp")
+#    l=input("Kas soovite leib osta? ")
+#    if l.isalpha():
+#        if l.lower()==("jah"):
+#            print("Leib maksab 3 euro")
+#            leib=int(input("Mitu tükki sa tahad? "))
+#            leib=leib*3
+#            print(f"See maksab {leib} euro")
+#        elif l.lower()==("ei"):
+#            print()
+#            leib=0
+#        else:
+#            print("Vastus saab olla ainult jah või ei")
+#    else:
+#        print("Vale Andmetüüp")
+#    hind=piim+saia+leib
+#    print(f"Hind on {hind} euro")
+#except:
+#    print("Vale Andmetüüp")
+
+#9 -
+
+#10
+#try:
+#    a=float(input("Sisestage esimene number: "))
+#    b=float(input("Sisestage teine number: "))
+#    if a>0 and b>0:
+#        z=input("Milliseid meetmeid tuleb võtta(+,-,*,/)? ")
+#        if z==("*"):
+#            summa=a*b
+#            print(f"Vastus on {summa}")
+#        elif z==("+"):
+#            summa=a+b
+#            print(f"Vastus on {summa}")
+#        elif z==("-"):
+#            summa=a-b
+#            print(f"Vastus on {summa}")
+#        elif z==("/"):
+#            summa=a/b
+#            print(f"Vastus on {summa}")
+#        else:
+#            print("Tuleb valida üks saadaolevatest valikutest(+,-,*,/)")
+#    else:
+#        print("Arvud peavad olema suuremad kui 0")
+#except:
+#    print("Vale Andmetüüp")
+
+#11 -
+
+#12
+#try:
+#    hind=float(input("Sisesta kauba hind: "))
+#    if hind<10 and hind>0:
+#        hind=hind*0,9
+#        print(f"Saate 10% allahindlust, kogumaksumus on {hind}")
+#    elif hind>10:
+#        hind=hind*0,8
+#        print(f"Saate 20% allahindlust, kogumaksumus on {hind}")
+#    else:
+#        print("Hind peab olema suurem kui 0")
+#except:
+#    print("Vale Andmetüüp")
+
+#13
+try:
+    sugu=input("Mis su sugu on? Mees või naine? ")
+    if sugu.isalpha():
+        if sugu.lower()==("mees"):
+            vana=int(input("Kui vana sa oled? "))
+            if vana>=16 and vana=<18:
+                print("Sa sobid kandidaatidega")
+            else:
+                print("Te ei kvalifitseeru, vanus peab olema 16–18")
+        elif sugu.lower()==("naine"):
+            print("Kandidaadid võivad olla ainult mehed")
+        else:
+            print("Vastuseks saab olla ainult mees või naine")
+    else:
+        print("Vale Andmetüüp")
+except:
+    print("Vale Andmetüüp")
