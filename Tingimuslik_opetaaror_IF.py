@@ -1,5 +1,5 @@
 from math import *
-
+from random import *
 
 #1
 #try:
@@ -70,22 +70,52 @@ from math import *
 #except:
 #    print("Vale Andmetüüp")
 
-#5 -
+#5
+#n=int(input("Mitu toa korteris? "))
+#for i in range(1,n+1,1): #range(n) - 0,1,2...n-1
+#    t=float(input(f"{i} toa temperatuur: "))
+#    if t>18:
+#        print("Soe")
+#    else:
+#        print("Külm")
 
 #6
-#try:
-#    pikk=int(input("Kui pikk sa oled? "))
-#    if pikk>100 and pikk<160:
+#kogus=randint(1,10)
+#l=k=p=0
+#for i in range(1,kogus+1,1):
+#    pikk=int(input("Kui pikk sa oled? ")) #pikkus=randint(56,256)
+#    if pikk>55 and pikk<160: 
 #        print("Sa oled lühike")
+#        l=l+1
 #    elif pikk>=160 and pikk<180:
 #        print("Sa oled keskmine")
-#    elif pikk>=180 and pikk<220:
+#        k=k+1
+#    elif pikk>=180 and pikk<260:
 #        print("Sa oled pikk")
+#        p=p+1
 #    else:
 #        print("Sisestage tegelik kõrgus")
-#except:
-#    print("Vale Andmetüüp")
+#print(f"Lühike: {l} inimene\nKeskmine: {k} inimene\nPikk: {p} inimene")
 
+#kogus=randint(1,10)
+#l=k=p=0
+#while kogus>0:
+#    kogus-=1
+#    sleep(1)
+#    pikk=int(input("Kui pikk sa oled? ")) #pikkus=randint(56,256)
+#    if pikk>55 and pikk<160: 
+#        print("Sa oled lühike")
+#        l=l+1
+#    elif pikk>=160 and pikk<180:
+#        print("Sa oled keskmine")
+#        k=k+1
+#    elif pikk>=180 and pikk<260:
+#        print("Sa oled pikk")
+#        p=p+1
+#    else:
+#        print("Sisestage tegelik kõrgus")
+#print(f"Lühike: {l} inimene\nKeskmine: {k} inimene\nPikk: {p} inimene")
+ 
 #7
 #try:
 #    sugu=input("Mis su sugu on? Mees või naine? ")
@@ -166,64 +196,105 @@ from math import *
 #except:
 #    print("Vale Andmetüüp")
 
-#9 -
+#9
+#a=0
+#b=1
+#c=2
+#d=3
+#while a!=b:
+#    while True:
+#        try:
+#            a=float(input("Sisesta 1. külg: "))
+#            break
+#        except:
+#            print("Sisesta veel kord")
+#    while True:
+#        try:
+#            b=float(input("Sisesta 2. külg: "))
+#            break
+#        except:
+#            print("Sisesta veel kord")
+#    while True:
+#        try:
+#            c=float(input("Sisesta 3. külg: "))
+#            break
+#        except:
+#            print("Sisesta veel kord")
+#    while True:
+#        try:
+#            d=float(input("Sisesta 4. külg: "))
+#            break
+#        except:
+#            print("Sisesta veel kord")
+#    if a!=b:
+#        print("Andmetüüb on ok, vaid see ie ole ruud!")
+#print(f"See on riid. Ruudi külg võrdub {a}")
 
 #10
-#try:
-#    a=float(input("Sisestage esimene number: "))
-#    b=float(input("Sisestage teine number: "))
-#    if a>0 and b>0:
-#        z=input("Milliseid meetmeid tuleb võtta(+,-,*,/)? ")
-#        if z==("*"):
-#            summa=a*b
-#            print(f"Vastus on {summa}")
-#        elif z==("+"):
-#            summa=a+b
-#            print(f"Vastus on {summa}")
-#        elif z==("-"):
-#            summa=a-b
-#            print(f"Vastus on {summa}")
-#        elif z==("/"):
-#            summa=a/b
-#            print(f"Vastus on {summa}")
+#while True:
+#    try:
+#        a=float(input("Sisestage esimene number: "))
+#        b=float(input("Sisestage teine number: "))
+#        if a>0 and b>0:
+#            z=input("Milliseid meetmeid tuleb võtta(+,-,*,/)? ")
+#            if z==("*"):
+#                summa=a*b
+#                print(f"Vastus on {summa}")
+#            elif z==("+"):
+#                summa=a+b
+#                print(f"Vastus on {summa}")
+#            elif z==("-"):
+#                summa=a-b
+#                print(f"Vastus on {summa}")
+#            elif z==("/"):
+#                summa=a/b
+#                print(f"Vastus on {summa}")
+#            else:
+#                print("Tuleb valida üks saadaolevatest valikutest(+,-,*,/)")
+#            break
 #        else:
-#            print("Tuleb valida üks saadaolevatest valikutest(+,-,*,/)")
-#    else:
-#        print("Arvud peavad olema suuremad kui 0")
-#except:
-#    print("Vale Andmetüüp")
+#            print("Arvud peavad olema suuremad kui 0")
+#    except:
+#        print("Vale Andmetüüp")
 
 #11 -
 
 #12
-#try:
-#    hind=float(input("Sisesta kauba hind: "))
-#    if hind<10 and hind>0:
-#        hind=hind*0,9
-#        print(f"Saate 10% allahindlust, kogumaksumus on {hind}")
-#    elif hind>10:
-#        hind=hind*0,8
-#        print(f"Saate 20% allahindlust, kogumaksumus on {hind}")
-#    else:
-#        print("Hind peab olema suurem kui 0")
-#except:
-#    print("Vale Andmetüüp")
+#while True:
+#    try:
+#        hind=float(input("Sisesta kauba hind: "))
+#        if hind<10 and hind>0:
+#            hind=hind*0,9
+#            print(f"Saate 10% allahindlust, kogumaksumus on {hind}")
+#            break
+#        elif hind>10:
+#            hind=hind*0,8
+#            print(f"Saate 20% allahindlust, kogumaksumus on {hind}")
+#            break
+#        else:
+#            print("Hind peab olema suurem kui 0")
+#            print()
+#    except:
+#        print("Vale Andmetüüp")
 
 #13
-try:
-    sugu=input("Mis su sugu on? Mees või naine? ")
-    if sugu.isalpha():
-        if sugu.lower()==("mees"):
-            vana=int(input("Kui vana sa oled? "))
-            if vana>=16 and vana=<18:
-                print("Sa sobid kandidaatidega")
+while True:
+    try:
+        print()
+        sugu=input("Mis su sugu on? Mees või naine? ")
+        if sugu.isalpha():
+            if sugu.lower()==("mees"):
+                vana=int(input("Kui vana sa oled? "))
+                if vana>=16 and vana<=18:
+                    print("Sa sobid kandidaatidega")
+                    break
+                else:
+                    print("Te ei kvalifitseeru, vanus peab olema 16–18")
+            elif sugu.lower()==("naine"):
+                print("Kandidaadid võivad olla ainult mehed")
             else:
-                print("Te ei kvalifitseeru, vanus peab olema 16–18")
-        elif sugu.lower()==("naine"):
-            print("Kandidaadid võivad olla ainult mehed")
+                print("Vastuseks saab olla ainult mees või naine")
         else:
-            print("Vastuseks saab olla ainult mees või naine")
-    else:
+            print("Vale Andmetüüp")
+    except:
         print("Vale Andmetüüp")
-except:
-    print("Vale Andmetüüp")
